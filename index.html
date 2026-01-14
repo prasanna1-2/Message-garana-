@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Message Garana – Fast & Secure Messaging</title>
+<title>Message Garana – Secure Messaging App</title>
 
 <style>
 body{
@@ -12,35 +12,41 @@ body{
     background:#f0f2f5;
     color:#333;
 }
+
+/* HEADER */
 .header{
     background:#1877f2;
     color:white;
-    padding:40px 20px;
+    padding:45px 20px;
     text-align:center;
 }
 .header h1{
     margin:0;
-    font-size:32px;
+    font-size:34px;
 }
 .header p{
     margin-top:10px;
     font-size:16px;
+    opacity:0.9;
 }
 
+/* CONTAINER */
 .container{
     max-width:900px;
     margin:auto;
     padding:20px;
 }
 
+/* CARD */
 .card{
     background:white;
-    border-radius:12px;
+    border-radius:14px;
     padding:25px;
     margin-bottom:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    box-shadow:0 4px 12px rgba(0,0,0,0.12);
 }
 
+/* FEATURES */
 .features ul{
     padding-left:20px;
 }
@@ -49,23 +55,33 @@ body{
     font-size:15px;
 }
 
+/* DOWNLOAD */
 .download{
     text-align:center;
 }
-.download a{
+.download-btn{
     display:inline-block;
     background:#42b72a;
     color:white;
-    padding:15px 30px;
+    padding:16px 35px;
     font-size:18px;
     text-decoration:none;
     border-radius:50px;
     margin-top:15px;
+    font-weight:bold;
 }
-.download a:hover{
+.download-btn:hover{
     background:#36a420;
 }
 
+/* INFO */
+.info{
+    font-size:14px;
+    color:#666;
+    margin-top:10px;
+}
+
+/* FOOTER */
 .footer{
     text-align:center;
     padding:15px;
@@ -77,49 +93,57 @@ body{
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
     <h1>Message Garana</h1>
-    <p>Fast • Secure • Simple Messaging App</p>
+    <p>Fast • Secure • Simple Messaging</p>
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
     <div class="card">
         <h2>📱 About Message Garana</h2>
         <p>
             Message Garana is a modern messaging application designed for fast,
-            secure, and smooth communication. Chat with friends and family
-            using a clean interface similar to popular messenger apps.
+            secure, and smooth communication. It provides a clean interface
+            similar to popular messenger apps, making chatting easy and enjoyable.
         </p>
         <p>
-            Send messages instantly, enjoy a user-friendly layout, and stay
-            connected anytime, anywhere.
+            Stay connected with friends and family using reliable real-time messaging
+            optimized for Android devices.
         </p>
     </div>
 
     <div class="card features">
         <h2>✨ Key Features</h2>
         <ul>
-            <li>🔒 Secure login and messaging</li>
-            <li>⚡ Fast real-time chat</li>
-            <li>👤 User-friendly interface (Messenger-style)</li>
-            <li>📨 One-to-one messaging</li>
-            <li>📱 Optimized for Android devices</li>
+            <li>🔐 Secure user authentication</li>
+            <li>⚡ Real-time fast messaging</li>
+            <li>👤 Messenger-style clean interface</li>
+            <li>📨 One-to-one chat support</li>
+            <li>📱 Optimized for Android phones</li>
         </ul>
     </div>
 
     <div class="card download">
         <h2>⬇️ Download Message Garana</h2>
-        <p>Click the button below to download the latest version of the app.</p>
+        <p>Download the latest version directly from our website.</p>
 
-        <!-- 🔴 REPLACE THIS LINK WITH YOUR APK FILE URL -->
-        <a href="https://yourwebsite.com/MessageGarana.apk" download>
+        <!-- DIRECT DOWNLOAD FROM SAME WEBSITE -->
+        <a class="download-btn" href="MessageGarana.apk" download>
             Download APK
         </a>
+
+        <div class="info">
+            APK Name: MessageGarana.apk<br>
+            Compatible with Android devices
+        </div>
     </div>
 
 </div>
 
+<!-- FOOTER -->
 <div class="footer">
     © 2026 Message Garana • All Rights Reserved
 </div>
